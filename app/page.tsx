@@ -89,35 +89,25 @@ export default function Home() {
           onClick={handleCardTap}
           className="relative h-[60vh] max-h-[500px] min-h-[400px] cursor-pointer"
         >
-          <div
-            className={`absolute inset-0 rounded-2xl shadow-2xl transition-all duration-500 ${
-              cardState === 'word'
-                ? 'rotate-y-0'
-                : 'rotate-y-180 opacity-0'
-            } preserve-3d bg-gradient-to-br from-gray-800 to-gray-700 border border-gray-600 flex items-center justify-center p-8`}
-          >
-            <div className="text-center">
-              <p className="text-gray-400 text-sm mb-2">Word</p>
-              <h2 className="text-4xl md:text-5xl font-bold text-white">
-                {currentCard.word}
-              </h2>
+          {cardState === 'word' ? (
+            <div className="absolute inset-0 rounded-2xl shadow-2xl bg-gradient-to-br from-gray-800 to-gray-700 border border-gray-600 flex items-center justify-center p-8 animate-fade-in">
+              <div className="text-center">
+                <p className="text-gray-400 text-sm mb-2">Word</p>
+                <h2 className="text-4xl md:text-5xl font-bold text-white">
+                  {currentCard.word}
+                </h2>
+              </div>
             </div>
-          </div>
-
-          <div
-            className={`absolute inset-0 rounded-2xl shadow-2xl transition-all duration-500 ${
-              cardState === 'meaning'
-                ? 'rotate-y-0'
-                : 'rotate-y-180 opacity-0'
-            } preserve-3d bg-gradient-to-br from-blue-900 to-blue-800 border border-blue-700 flex items-center justify-center p-8`}
-          >
-            <div className="text-center">
-              <p className="text-blue-400 text-sm mb-4">Meaning</p>
-              <p className="text-xl md:text-2xl text-blue-100 leading-relaxed">
-                {currentCard.meaning}
-              </p>
+          ) : (
+            <div className="absolute inset-0 rounded-2xl shadow-2xl bg-gradient-to-br from-blue-900 to-blue-800 border border-blue-700 flex items-center justify-center p-8 animate-fade-in">
+              <div className="text-center">
+                <p className="text-blue-400 text-sm mb-4">Meaning</p>
+                <p className="text-xl md:text-2xl text-blue-100 leading-relaxed">
+                  {currentCard.meaning}
+                </p>
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         {/* Hint text */}

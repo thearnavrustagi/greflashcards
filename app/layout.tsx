@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -11,13 +11,6 @@ export const metadata: Metadata = {
   title: "GRE Flashcards",
   description: "Learn GRE words with interactive flashcards",
   manifest: "/manifest.json",
-  themeColor: "#1f2937",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -41,6 +34,14 @@ export const metadata: Metadata = {
     title: "GRE Flashcards",
     description: "Learn GRE words with interactive flashcards",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: "#111827",
 };
 
 export default function RootLayout({
