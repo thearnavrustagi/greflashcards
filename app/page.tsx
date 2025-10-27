@@ -1,65 +1,130 @@
-import Image from "next/image";
+'use client';
+
+import { useEffect, useState } from 'react';
+import { parseCSV, shuffleArray } from '@/lib/csvParser';
+import type { Flashcard } from '@/lib/csvParser';
+
+type CardState = 'word' | 'meaning';
 
 export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+  const [cards, setCards] = useState<Flashcard[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [cardState, setCardState] = useState<CardState>('word');
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Load and parse CSV data
+    fetch('/GREWords%20-%20dictionary.csv')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.text();
+      })
+      .then(content => {
+        const parsedCards = parseCSV(content);
+        const shuffledCards = shuffleArray(parsedCards);
+        setCards(shuffledCards);
+        setIsLoading(false);
+      })
+      .catch(error => {
+        console.error('Error loading CSV:', error);
+        setIsLoading(false);
+      });
+  }, []);
+
+  const handleCardTap = () => {
+    if (cardState === 'word') {
+      setCardState('meaning');
+    } else {
+      // Move to next card
+      if (currentIndex < cards.length - 1) {
+        setCurrentIndex(currentIndex + 1);
+        setCardState('word');
+      }
+    }
+  };
+
+  if (isLoading) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-gray-900">
+        <p className="text-xl text-gray-300">Loading flashcards...</p>
+      </div>
+    );
+  }
+
+  if (cards.length === 0) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-gray-900">
+        <p className="text-xl text-gray-300">No flashcards available</p>
+      </div>
+    );
+  }
+
+  if (currentIndex >= cards.length) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-gray-900">
+        <div className="text-center px-6">
+          <h1 className="text-4xl font-bold text-green-400 mb-4">🎉 Done!</h1>
+          <p className="text-xl text-gray-300">
+            You've completed all {cards.length} flashcards
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+    );
+  }
+
+  const currentCard = cards[currentIndex];
+
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-gray-900 p-4">
+      <div className="w-full max-w-md">
+        {/* Progress indicator */}
+        <div className="mb-4 text-center text-gray-400 text-sm">
+          {currentIndex + 1} / {cards.length}
         </div>
-      </main>
+
+        {/* Flashcard */}
+        <div
+          onClick={handleCardTap}
+          className="relative h-[60vh] max-h-[500px] min-h-[400px] cursor-pointer"
+        >
+          <div
+            className={`absolute inset-0 rounded-2xl shadow-2xl transition-all duration-500 ${
+              cardState === 'word'
+                ? 'rotate-y-0'
+                : 'rotate-y-180 opacity-0'
+            } preserve-3d bg-gradient-to-br from-gray-800 to-gray-700 border border-gray-600 flex items-center justify-center p-8`}
+          >
+            <div className="text-center">
+              <p className="text-gray-400 text-sm mb-2">Word</p>
+              <h2 className="text-4xl md:text-5xl font-bold text-white">
+                {currentCard.word}
+              </h2>
+            </div>
+          </div>
+
+          <div
+            className={`absolute inset-0 rounded-2xl shadow-2xl transition-all duration-500 ${
+              cardState === 'meaning'
+                ? 'rotate-y-0'
+                : 'rotate-y-180 opacity-0'
+            } preserve-3d bg-gradient-to-br from-blue-900 to-blue-800 border border-blue-700 flex items-center justify-center p-8`}
+          >
+            <div className="text-center">
+              <p className="text-blue-400 text-sm mb-4">Meaning</p>
+              <p className="text-xl md:text-2xl text-blue-100 leading-relaxed">
+                {currentCard.meaning}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Hint text */}
+        <div className="mt-6 text-center text-gray-500 text-sm">
+          {cardState === 'word' ? 'Tap to reveal meaning' : 'Tap to continue'}
+        </div>
+      </div>
     </div>
   );
 }
