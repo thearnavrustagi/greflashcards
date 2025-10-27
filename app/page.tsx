@@ -101,6 +101,10 @@ export default function Home() {
           ) : (
             <div className="absolute inset-0 rounded-2xl shadow-2xl bg-gradient-to-br from-blue-900 to-blue-800 border border-blue-700 flex items-center justify-center p-8 animate-fade-in">
               <div className="text-center">
+                <p className="text-blue-400 text-sm mb-2">Word</p>
+                <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                  {currentCard.word}
+                </h2>
                 <p className="text-blue-400 text-sm mb-4">Meaning</p>
                 <p className="text-xl md:text-2xl text-blue-100 leading-relaxed">
                   {currentCard.meaning}
