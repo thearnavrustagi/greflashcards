@@ -1,547 +1,139 @@
-word,meaning
-audacious,BOLD
-courageous,BOLD
-dauntless,BOLD
-capricious,CHANGING QUICKLY
-mercurial,CHANGING QUICKLY
-volatile,CHANGING QUICKLY
-dither,HESITATE
-oscillate,HESITATE
-teeter,HESITATE
-vacillate,HESITATE
-waver,HESITATE
-abrupt,ACT QUICKLY
-apace,ACT QUICKLY
-headlong,ACT QUICKLY
-impetuous,ACT QUICKLY
-precipitate,ACT QUICKLY
-credulous,INNOCENT/INEXPERIENCED
-gullible,INNOCENT/INEXPERIENCED
-ingenuous,INNOCENT/INEXPERIENCED
-naive,INNOCENT/INEXPERIENCED
-novitiate,INNOCENT/INEXPERIENCED
-tyro,INNOCENT/INEXPERIENCED
-abstruse,DIFFICULT TO UNDERSTAND
-ambiguous,DIFFICULT TO UNDERSTAND
-arcane,DIFFICULT TO UNDERSTAND
-bemusing,DIFFICULT TO UNDERSTAND
-cryptic,DIFFICULT TO UNDERSTAND
-enigmatic,DIFFICULT TO UNDERSTAND
-esoteric,DIFFICULT TO UNDERSTAND
-inscrutable,DIFFICULT TO UNDERSTAND
-obscure,DIFFICULT TO UNDERSTAND
-opaque,DIFFICULT TO UNDERSTAND
-paradoxical,DIFFICULT TO UNDERSTAND
-perplexing,DIFFICULT TO UNDERSTAND
-recondite,DIFFICULT TO UNDERSTAND
-turbid,DIFFICULT TO UNDERSTAND
-articulate,EASY TO UNDERSTAND
-cogent,EASY TO UNDERSTAND
-eloquent,EASY TO UNDERSTAND
-evident,EASY TO UNDERSTAND
-limpid,EASY TO UNDERSTAND
-lucid,EASY TO UNDERSTAND
-pellucid,EASY TO UNDERSTAND
-astute,SMART/LEARNED
-canny,SMART/LEARNED
-erudite,SMART/LEARNED
-perspicacious,SMART/LEARNED
-aspersion,CRITICIZE/CRITICISM
-belittle,CRITICIZE/CRITICISM
-berate,CRITICIZE/CRITICISM
-calumny,CRITICIZE/CRITICISM
-castigate,CRITICIZE/CRITICISM
-decry,CRITICIZE/CRITICISM
-defame/defamation,CRITICIZE/CRITICISM
-denounce,CRITICIZE/CRITICISM
-deride/derisive,CRITICIZE/CRITICISM
-diatribe,CRITICIZE/CRITICISM
-disparage,CRITICIZE/CRITICISM
-excoriate,CRITICIZE/CRITICISM
-gainsay,CRITICIZE/CRITICISM
-harangue,CRITICIZE/CRITICISM
-impugn,CRITICIZE/CRITICISM
-inveigh,CRITICIZE/CRITICISM
-lambaste,CRITICIZE/CRITICISM
-objurgate,CRITICIZE/CRITICISM
-obloquy,CRITICIZE/CRITICISM
-opprobrium,CRITICIZE/CRITICISM
-pillory,CRITICIZE/CRITICISM
-rebuke,CRITICIZE/CRITICISM
-remonstrate,CRITICIZE/CRITICISM
-reprehend,CRITICIZE/CRITICISM
-reprove,CRITICIZE/CRITICISM
-revile,CRITICIZE/CRITICISM
-tirade,CRITICIZE/CRITICISM
-vituperate,CRITICIZE/CRITICISM
-bacchanalian,CAROUSAL
-debauchery,CAROUSAL
-depraved,CAROUSAL
-dissipated,CAROUSAL
-iniquity,CAROUSAL
-libertine,CAROUSAL
-libidinous,CAROUSAL
-licentious,CAROUSAL
-reprobate,CAROUSAL
-ribald,CAROUSAL
-salacious,CAROUSAL
-sordid,CAROUSAL
-turpitude,CAROUSAL
-candor/candid,TRUTH
-fealty,TRUTH
-frankness,TRUTH
-indisputable,TRUTH
-indubitable,TRUTH
-legitimate,TRUTH
-probity,TRUTH
-sincere,TRUTH
-veracious,TRUTH
-verity,TRUTH
-apocryphal,FALSEHOOD
-canard,FALSEHOOD
-chicanery,FALSEHOOD
-dissemble,FALSEHOOD
-duplicity,FALSEHOOD
-equivocate,FALSEHOOD
-erroneous,FALSEHOOD
-ersatz,FALSEHOOD
-fallacious,FALSEHOOD
-feigned,FALSEHOOD
-guile,FALSEHOOD
-mendacious/mendacity,FALSEHOOD
-perfidy,FALSEHOOD
-prevaricate,FALSEHOOD
-specious,FALSEHOOD
-spurious,FALSEHOOD
-acerbic,"BITING (as in wit or temperament)"
-acidulous,"BITING (as in wit or temperament)"
-acrimonious,"BITING (as in wit or temperament)"
-asperity,"BITING (as in wit or temperament)"
-caustic,"BITING (as in wit or temperament)"
-mordacious,"BITING (as in wit or temperament)"
-mordant,"BITING (as in wit or temperament)"
-trenchant,"BITING (as in wit or temperament)"
-acclaim,PRAISE
-accolade,PRAISE
-aggrandize,PRAISE
-encomium,PRAISE
-eulogize,PRAISE
-extol,PRAISE
-fawn,PRAISE
-laud/laudatory,PRAISE
-venerate/veneration,PRAISE
-baleful,HARMFUL
-baneful,HARMFUL
-deleterious,HARMFUL
-inimical,HARMFUL
-injurious,HARMFUL
-insidious,HARMFUL
-minatory,HARMFUL
-perfidious,HARMFUL
-pernicious,HARMFUL
-craven,TIMID/TIMIDITY
-diffident,TIMID/TIMIDITY
-pusillanimous,TIMID/TIMIDITY
-recreant,TIMID/TIMIDITY
-timorous,TIMID/TIMIDITY
-trepidation,TIMID/TIMIDITY
-banal,BORING
-fatuous,BORING
-hackneyed,BORING
-insipid,BORING
-mundane,BORING
-pedestrian,BORING
-platitude,BORING
-prosaic,BORING
-quotidian,BORING
-trite,BORING
-adulterate,WEAKEN
-enervate,WEAKEN
-exacerbate,WEAKEN
-inhibit,WEAKEN
-obviate,WEAKEN
-stultify,WEAKEN
-undermine,WEAKEN
-vitiate,WEAKEN
-abet,ASSIST
-advocate,ASSIST
-ancillary,ASSIST
-bolster,ASSIST
-corroborate,ASSIST
-countenance,ASSIST
-espouse,ASSIST
-mainstay,ASSIST
-munificent,ASSIST
-proponent,ASSIST
-stalwart,ASSIST
-sustenance,ASSIST
-antithetic,HOSTILE
-churlish,HOSTILE
-curmudgeon,HOSTILE
-irascible,HOSTILE
-malevolent,HOSTILE
-misanthropic,HOSTILE
-truculent,HOSTILE
-vindictive,HOSTILE
-implacable,STUBBORN
-inexorable,STUBBORN
-intractable,STUBBORN
-intransigent,STUBBORN
-obdurate,STUBBORN
-obstinate,STUBBORN
-recalcitrant,STUBBORN
-refractory,STUBBORN
-renitent,STUBBORN
-untoward,STUBBORN
-vexing,STUBBORN
-burgeoning,BEGINNING/YOUNG
-callow,BEGINNING/YOUNG
-engender,BEGINNING/YOUNG
-inchoate,BEGINNING/YOUNG
-incipient,BEGINNING/YOUNG
-nascent,BEGINNING/YOUNG
-altruistic,GENEROUS/KIND
-beneficent,GENEROUS/KIND
-clement,GENEROUS/KIND
-largess,GENEROUS/KIND
-magnanimous,GENEROUS/KIND
-munificent,GENEROUS/KIND
-philanthropic,GENEROUS/KIND
-unstinting,GENEROUS/KIND
-avaricious,GREEDY
-covetous,GREEDY
-mercenary,GREEDY
-miserly,GREEDY
-penurious,GREEDY
-rapacious,GREEDY
-venal,GREEDY
-compendious,TERSE
-curt,TERSE
-laconic,TERSE
-pithy,TERSE
-succinct,TERSE
-taciturn,TERSE
-bombastic,OVERBLOWN/WORDY
-circumlocution,OVERBLOWN/WORDY
-garrulous,OVERBLOWN/WORDY
-grandiloquent,OVERBLOWN/WORDY
-loquacious,OVERBLOWN/WORDY
-periphrastic,OVERBLOWN/WORDY
-prolix,OVERBLOWN/WORDY
-rhetoric,OVERBLOWN/WORDY
-turgid,OVERBLOWN/WORDY
-verbose,OVERBLOWN/WORDY
-authoritarian,DICTATORIAL
-despotic,DICTATORIAL
-dogmatic,DICTATORIAL
-hegemonic/hegemony,DICTATORIAL
-imperious,DICTATORIAL
-peremptory,DICTATORIAL
-tyrannical,DICTATORIAL
-abhorrence,HATRED
-anathema,HATRED
-antagonism,HATRED
-antipathy,HATRED
-detestation,HATRED
-enmity,HATRED
-loathing,HATRED
-malice,HATRED
-odium,HATRED
-rancor,HATRED
-dilettante,BEGINNER/AMATEUR
-fledgling,BEGINNER/AMATEUR
-neophyte,BEGINNER/AMATEUR
-novitiate,BEGINNER/AMATEUR
-proselyte,BEGINNER/AMATEUR
-tyro,BEGINNER/AMATEUR
-indolent,LAZY/SLUGGISH
-inert,LAZY/SLUGGISH
-lackadaisical,LAZY/SLUGGISH
-languid,LAZY/SLUGGISH
-lassitude,LAZY/SLUGGISH
-lethargic,LAZY/SLUGGISH
-phlegmatic,LAZY/SLUGGISH
-quiescent,LAZY/SLUGGISH
-slothful,LAZY/SLUGGISH
-torpid,LAZY/SLUGGISH
-ameliorate,PACIFY/SATISFY
-appease,PACIFY/SATISFY
-assuage,PACIFY/SATISFY
-defer,PACIFY/SATISFY
-mitigate,PACIFY/SATISFY
-mollify,PACIFY/SATISFY
-placate,PACIFY/SATISFY
-propitiate,PACIFY/SATISFY
-satiate,PACIFY/SATISFY
-slake,PACIFY/SATISFY
-soothe,PACIFY/SATISFY
-absolve,FORGIVE/MAKE AMENDS
-acquit,FORGIVE/MAKE AMENDS
-exculpate,FORGIVE/MAKE AMENDS
-exonerate,FORGIVE/MAKE AMENDS
-expiate,FORGIVE/MAKE AMENDS
-palliate,FORGIVE/MAKE AMENDS
-redress,FORGIVE/MAKE AMENDS
-vindicate,FORGIVE/MAKE AMENDS
-destitute,POOR
-esurient,POOR
-impecunious,POOR
-indigent,POOR
-ardent/ardor,FAVORING/NOT IMPARTIAL
-doctrinaire,FAVORING/NOT IMPARTIAL
-fervid,FAVORING/NOT IMPARTIAL
-partisan,FAVORING/NOT IMPARTIAL
-tendentious,FAVORING/NOT IMPARTIAL
-zealot,FAVORING/NOT IMPARTIAL
-abnegate,DENYING OF SELF
-abstain,DENYING OF SELF
-ascetic,DENYING OF SELF
-spartan,DENYING OF SELF
-stoic,DENYING OF SELF
-temperate,DENYING OF SELF
-ambulatory,WALKING ABOUT
-itinerant,WALKING ABOUT
-meander,WALKING ABOUT
-peripatetic,WALKING ABOUT
-disingenuous,INSINCERE
-dissemble,INSINCERE
-fulsome,INSINCERE
-ostensible,INSINCERE
-unctuous,INSINCERE
-discomfit,PREVENT/OBSTRUCT
-encumber,PREVENT/OBSTRUCT
-fetter,PREVENT/OBSTRUCT
-forfend,PREVENT/OBSTRUCT
-hinder,PREVENT/OBSTRUCT
-impede,PREVENT/OBSTRUCT
-inhibit,PREVENT/OBSTRUCT
-occlude,PREVENT/OBSTRUCT
-aberrant,ECCENTRIC/DISSIMILAR
-anachronism,ECCENTRIC/DISSIMILAR
-anomalous,ECCENTRIC/DISSIMILAR
-discrete,ECCENTRIC/DISSIMILAR
-eclectic,ECCENTRIC/DISSIMILAR
-esoteric,ECCENTRIC/DISSIMILAR
-iconoclast,ECCENTRIC/DISSIMILAR
-chortle,FUNNY
-droll,FUNNY
-facetious,FUNNY
-flippant,FUNNY
-gibe,FUNNY
-jocular,FUNNY
-levity,FUNNY
-ludicrous,FUNNY
-raillery,FUNNY
-riposte,FUNNY
-simper,FUNNY
-disconsolate,SORROW
-doleful,SORROW
-dolor,SORROW
-elegiac,SORROW
-forlorn,SORROW
-lament,SORROW
-lugubrious,SORROW
-melancholy,SORROW
-morose,SORROW
-plaintive,SORROW
-threnody,SORROW
-defile,DISGUSTING/OFFENSIVE
-fetid,DISGUSTING/OFFENSIVE
-invidious,DISGUSTING/OFFENSIVE
-noisome,DISGUSTING/OFFENSIVE
-odious,DISGUSTING/OFFENSIVE
-putrid,DISGUSTING/OFFENSIVE
-rebarbative,DISGUSTING/OFFENSIVE
-abeyance,WITHDRAWAL/RETREAT
-abjure,WITHDRAWAL/RETREAT
-abnegation,WITHDRAWAL/RETREAT
-abortive,WITHDRAWAL/RETREAT
-abrogate,WITHDRAWAL/RETREAT
-decamp,WITHDRAWAL/RETREAT
-demur,WITHDRAWAL/RETREAT
-recant,WITHDRAWAL/RETREAT
-recidivism,WITHDRAWAL/RETREAT
-remission,WITHDRAWAL/RETREAT
-renege,WITHDRAWAL/RETREAT
-rescind,WITHDRAWAL/RETREAT
-retrograde,WITHDRAWAL/RETREAT
-bereave,DEATH/MOURNING
-cadaver,DEATH/MOURNING
-defunct,DEATH/MOURNING
-demise,DEATH/MOURNING
-dolorous,DEATH/MOURNING
-elegy,DEATH/MOURNING
-knell,DEATH/MOURNING
-lament,DEATH/MOURNING
-macabre,DEATH/MOURNING
-moribund,DEATH/MOURNING
-obsequies,DEATH/MOURNING
-sepulchral,DEATH/MOURNING
-wraith,DEATH/MOURNING
-counterpart,COPY
-emulate,COPY
-facsimile,COPY
-factitious,COPY
-paradigm,COPY
-precursor,COPY
-simulate,COPY
-vicarious,COPY
-equitable,EQUAL
-equity,EQUAL
-tantamount,EQUAL
-aberration,UNUSUAL
-anomaly,UNUSUAL
-iconoclast,UNUSUAL
-idiosyncrasy,UNUSUAL
-discursive,WANDERING
-expatiate,WANDERING
-forage,WANDERING
-itinerant,WANDERING
-peregrination,WANDERING
-peripatetic,WANDERING
-sojourn,WANDERING
-abatement,GAPS/OPENINGS
-aperture,GAPS/OPENINGS
-fissure,GAPS/OPENINGS
-hiatus,GAPS/OPENINGS
-interregnum,GAPS/OPENINGS
-interstice,GAPS/OPENINGS
-lull,GAPS/OPENINGS
-orifice,GAPS/OPENINGS
-rent,GAPS/OPENINGS
-respite,GAPS/OPENINGS
-rift,GAPS/OPENINGS
-beneficial,HEALTHY
-salubrious,HEALTHY
-salutary,HEALTHY
-abridge,ABBREVIATED
-compendium,ABBREVIATED
-cursory,ABBREVIATED
-curtail,ABBREVIATED
-syllabus,ABBREVIATED
-synopsis,ABBREVIATED
-terse,ABBREVIATED
-adage,WISDOM
-aphorism,WISDOM
-apothegm,WISDOM
-axiom,WISDOM
-bromide,WISDOM
-dictum,WISDOM
-epigram,WISDOM
-platitude,WISDOM
-sententious,WISDOM
-truism,WISDOM
-conjugal,FAMILY
-consanguine,FAMILY
-distaff,FAMILY
-endogamous,FAMILY
-filial,FAMILY
-fraternal,FAMILY
-progenitor,FAMILY
-scion,FAMILY
-askance,NOT A STRAIGHT LINE
-awry,NOT A STRAIGHT LINE
-careen,NOT A STRAIGHT LINE
-carom,NOT A STRAIGHT LINE
-circuitous,NOT A STRAIGHT LINE
-circumvent,NOT A STRAIGHT LINE
-gyrate,NOT A STRAIGHT LINE
-labyrinth,NOT A STRAIGHT LINE
-meander,NOT A STRAIGHT LINE
-oblique,NOT A STRAIGHT LINE
-serrated,NOT A STRAIGHT LINE
-sidle,NOT A STRAIGHT LINE
-sinuous,NOT A STRAIGHT LINE
-undulating,NOT A STRAIGHT LINE
-vortex,NOT A STRAIGHT LINE
-appraise,INVESTIGATE
-ascertain,INVESTIGATE
-assay,INVESTIGATE
-descry,INVESTIGATE
-peruse,INVESTIGATE
-anachronism,TIME/ORDER/DURATION
-antecede,TIME/ORDER/DURATION
-antedate,TIME/ORDER/DURATION
-anterior,TIME/ORDER/DURATION
-archaic,TIME/ORDER/DURATION
-diurnal,TIME/ORDER/DURATION
-eon,TIME/ORDER/DURATION
-ephemeral,TIME/ORDER/DURATION
-epoch,TIME/ORDER/DURATION
-fortnight,TIME/ORDER/DURATION
-millennium,TIME/ORDER/DURATION
-penultimate,TIME/ORDER/DURATION
-synchronous,TIME/ORDER/DURATION
-temporal,TIME/ORDER/DURATION
-bilious,BAD MOOD
-dudgeon,BAD MOOD
-irascible,BAD MOOD
-pettish,BAD MOOD
-petulant,BAD MOOD
-pique,BAD MOOD
-querulous,BAD MOOD
-umbrage,BAD MOOD
-waspish,BAD MOOD
-abash,EMBARRASS
-chagrin,EMBARRASS
-compunction,EMBARRASS
-contrition,EMBARRASS
-diffidence,EMBARRASS
-expiate,EMBARRASS
-foible,EMBARRASS
-gaucherie,EMBARRASS
-rue,EMBARRASS
-asperity,HARD-HEARTED
-baleful,HARD-HEARTED
-dour,HARD-HEARTED
-fell,HARD-HEARTED
-malevolent,HARD-HEARTED
-mordant,HARD-HEARTED
-sardonic,HARD-HEARTED
-scathing,HARD-HEARTED
-truculent,HARD-HEARTED
-vitriolic,HARD-HEARTED
-vituperation,HARD-HEARTED
-admonish,NAG
-belabor,NAG
-cavil,NAG
-enjoin,NAG
-exhort,NAG
-harangue,NAG
-hector,NAG
-martinet,NAG
-remonstrate,NAG
-reproof,NAG
-augur,PREDICT
-auspice,PREDICT
-fey,PREDICT
-harbinger,PREDICT
-portentous,PREDICT
-precursor,PREDICT
-presage,PREDICT
-prescient,PREDICT
-prognosticate,PREDICT
-adventitious,LUCK
-amulet,LUCK
-auspicious,LUCK
-fortuitous,LUCK
-kismet,LUCK
-optimum,LUCK
-portentous,LUCK
-propitiate,LUCK
-propitious,LUCK
-providential,LUCK
-serendipity,LUCK
-talisman,LUCK
-fetid,NASTY
-noisome,NASTY
-noxious,NASTY
-cacophony,HARSH-SOUNDING
-din,HARSH-SOUNDING
-dissonant,HARSH-SOUNDING
-raucous,HARSH-SOUNDING
-strident,HARSH-SOUNDING
-euphonious,PLEASANT-SOUNDING
-harmonious,PLEASANT-SOUNDING
-melodious,PLEASANT-SOUNDING
-sonorous,PLEASANT-SOUNDING
+Word,Meaning,
+metastasize,when cancer spreads from one cell to another,
+piquant,(for food) tasting pleasant but strong and spicy,interesting & exciting in a mysterious way
+indolence,inclination to laziness; sloth,
+characterization,the way that a writer makes the characters in a book or play seem real,the way in which somebody/something is described
+mar,to harm or damage something good,
+meticulous,giving or showing great attention to detail; very careful,
+sophisticated,"having or showing a lot of experience of the world and social situations; knowing about fashion, culture, etc.","(used about machines, systems, etc.) advanced and complicated"
+cloying,"(used about food, a smell, etc.) so sweet that it is unpleasant","using emotion in a very obvious way, so that the result is unpleasant"
+reproach,"to criticize or express blame towards someone, especially for failing to meet expectations.",
+lauded,praised,
+scruples,adherence to ethical principals,
+lucre,"money, especially when regarded as sordid or distasteful or gained in a dishonourable way.",
+penury,the state of being very poor,
+avarice,extreme desire for money,
+adumbration,"the act of giving a vague, sketchy, or partial outline of something, acting as a hint or prefiguration","forsee, forsight"
+aggrandizement,"the act of increasing the power, wealth, prestige, or importance of someone or something, often by making it seem greater than it is",
+abnegation,the act of rejecting/rejoicing something,
+prodigally,"in a wasteful, extravagant or lavish manner",
+abjure,renounce/repudiate,
+repudiate,refusing to accept/believe something,
+demur at,shy away from,
+laggardly,"lowly, in a way that lags behind, or in the manner of a laggard",
+diminutive,much smaller than usual,
+indignant,shocked or angry because somebody has said or done something that you do not like and do not agree with,
+communal,shared by a community,
+dilatory,slow to act,
+sanguine,cheerful,
+mendacity,"tendency to lie, untruthfullness",
+japery,acting like a clown,
+approbation,approval/praise,
+disavowel,denial of responsibility,
+prudent,sensible and careful when making judgements and decisions; avoiding unnecessary risks,
+castigate,"to criticize, strongly oppose or punish somebody/something severely",
+onerous,"difficult and needing a lot of effort, troublesome, burdensome",
+verbiage,the way in which something is expressed; wording or diction.,excessive use of technical words
+dichtomy,the separation that exists between two groups or things that are completely opposite to and different from each other,
+plenum,an assembly of all the members of a group or committee.,
+paucity,less than enough of something; too little,
+preternatural,beyond what is natural,
+preeminent,surpassing all others; very distinguished in some way,
+dubious,not sure/certain,
+superficial,not thinking about something in a deep or complete way,
+middling,of average size/stature,
+idiosyncratic,unique to an individual,
+spartan,very simple and not comfortable,
+imprecations,"a curse, strong verbal attack",
+nugatory,of no value or importance,
+preponderance,"a greater amount, strength, or superiority in numbers, power, or influence compared to others.",
+jejune,in a simple unsophisticiated boring way,
+cavalier,showing lack of concern,
+frivolous,"not serious, silly",
+prescient,knowing about the future,
+provident,being careful and planning for the future,
+cognizant,being aware,
+myopic,lacking in foresight,
+patent,clear/obvious,
+disconcerting,upsetting/embarrassing,
+ignominious,shameful (ig- means negatively charged word),
+laudatory,expressing praise,
+paean,expression of respect,
+olfactory,connected with the sense of smell,
+saccharine,"sugary, sweet",
+fetid,smelling extremely unpleasant,
+malodorous,something which smells unpleasant,
+captious,tending to find fault or raise petty objections,
+dissolute,(of a person or a way of life) overindulging in sensual pleasures,
+irascible,having or showing tendency to get easily angered,
+profligate,"wasting money, time, etc. or using it in a careless way",
+nettlesome,causing annoyance or difficulty,
+smug,too pleased with yourself,
+mirthful,"full of mirth, merry or amusing",
+doleful,sad or unhappy,
+capricious,changing behaviour suddenly in a way that is difficult to predict,
+bucolic,relating to the pleasant aspects of the countryside and country life.,
+affable,"pleasant, friendly and easy to talk to",
+morose,"bad-tempered, and not saying much to other people",
+bemusing,"puzzle, confuse or bewilder someone",
+salient,most important or noticeable,
+abased,lowered in rank; behave in a way that belittles someone else,
+disavowed,rejected; deny any responsibility or support for.,
+superfluous,more than needed,
+pervasive,occuring widely or throughout; that is present in all parts of something,
+esoteric,understood only by a few,
+arcane,"mysterious, hard to understand",
+lascivious,"obscene, vulgar; feeling or revealing overt sexual desire",
+ribald,vulgar; talking about sex in a rude but humorous way,
+skirt,to avoid,
+emblazon,"to adorn, decorate or celebrate",
+assuage,"to relieve, lessen; to make an unpleasant feeling less strong",
+allay,to lessen; to make something less strong,
+mediate,to try to end a disagreement between two or more people or groups,
+censured,"to tell somebody, in a strong and formal way, that they have done something wrong",
+encumbered,"hindered, blocked; restrict or impede (someone or something) in such a way that free action or movement is difficult.",
+ambled,to walk at a slow relaxed speed,
+vacillated,"wavered; to keep changing your ideas or opinions about something, especially in a way that annoys other people",
+dawdled,waste time or delay in a decision,
+lamented,to feel or express great sorrow or regret for,
+grovel,humbled oneself out of fear or service to another,
+contradistinction,distinction made by contrasting the different qualities of two things.,
+supercilious,showing that you think that you are better than other people,
+maladroit,inefficient or inept; clumsy.,
+aloof,not friendly to other people; distant,
+disingenuous,"not candid or sincere, typically by pretending that one knows less about something than one really does.",
+duplicitous,"marked by deceitfulness, often by saying one thing while intending or doing another",
+sagacious,having or showing good judgement and understanding,
+erudite,having or showing great knowledge that is based on careful study,
+apposite,"very appropriate, suitable, or relevant for a particular situation or topic",
+cacophounous,"a mixture of loud, unpleasant sounds; noise",
+succint,"said clearly, in a few words",
+prolix,(of speech or writing) using or containing too many words; tediously lengthy.,
+loqacious,having a tendency to talk a lot,
+compendious,containing or presenting the essential facts of something in a comprehensive but concise way.,
+commiserate,to feel sorry for and show understanding towards somebody who is unhappy or in difficulty,
+scuffle,"a short, not very violent fight",
+grimace,"an ugly expression on your face that shows that you are angry, disgusted or that something is hurting you",
+fulsome,complimentary or flattering to an excessive degree; of large size or quantity; generous or abundant.,
+effulgent,shining brightly; radiant,
+effusive,"showing or expressing gratitude, pleasure, or approval in an unrestrained or heartfelt manner; (of igneous rock) poured out when molten and later solidified.",
+unctuous,excessively flattering or ingratiating; oily.,
+inveigled,persuade (someone) to do something by means of deception or flattery.,
+elated,very happy or excited,
+nonplussed,confused; not able to understand,
+confounded,"onfused or perplexed, used to express surprise or bewilderment.",
+proliferation,a rapid multiplication of parts or the increase in the number of something,
+lassitude,a state of physical or mental weariness; lack of energy.,
+acquisition,the act of obtaining or buying something; something that you have obtained or bought,
+dissemination,"the act of spreading something widely, such as news, information, ideas, or even physical matter like seeds or medical treatments",
+inveighed,speak or write about (something) with great hostility.,
+demurred,raise objections or show reluctance.,
+acceded,"to agree to a request, demand, etc.; to achieve a high position, especially to become king or queen",
+dexterous,"showing or having skill, especially with the hands.",
+caustic,(used about a substance) able to burn or destroy things by chemical action; critical in a cruel way,
+genial,(used about a person) pleasant and friendly,
+septuagenarian,a person who is between 70 and 79 years old.,
+hoary,grayish white; overused or unoriginal,
+pusillanimously,showing a lack of courage or determination; timid.,
+punctiliously,"in a very careful and precise way, showing great attention to detail or correctness in behavior and etiquette",
+engendered,"cause or give rise to (a feeling, situation, or condition).",
